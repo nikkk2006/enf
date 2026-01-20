@@ -53,7 +53,7 @@ class CatalogView(TemplateView):
         # Фильтр по максимальной цене
         'max_price': lambda queryset, value: queryset.filter(price__lte=value),
         # Фильтр по размеру
-        'size': lambda queryset, value: queryset.filter(product_size__size__name=value)
+        'size': lambda queryset, value: queryset.filter(product_sizes__size__name=value)
     }
 
     def get_context_data(self, **kwargs):

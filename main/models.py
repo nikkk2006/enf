@@ -71,7 +71,7 @@ class ProductSize(models.Model):
     # Связь с моделью Product, CASCADE - удаление размеров при удалении товара
     # related_name позволяет обращаться к размерам товара через product.product_size.all()
     product = models.ForeignKey('Product', on_delete=models.CASCADE,
-                                related_name='product_size')
+                                related_name='product_sizes')
     
     # Связь с моделью Size (предположительно содержит названия размеров: S, M, L и т.д.)
     size = models.ForeignKey(Size, on_delete=models.CASCADE)
