@@ -1,0 +1,15 @@
+venv/
+.pylintrc
+pycache
+.vscode
+.idea
+.env
+django.log
+security.log
+
+db.sqlite3
+media/
+debug.log
+
+*.cpython*
+__pycache__/
